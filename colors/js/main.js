@@ -10,7 +10,7 @@ var $container = $(".container");
 	var objects = objectsData.split(",");
 	var animations = animationsData.split(",");
 
-	var delay = 2*1000;
+	var delay = 4*1000;
 
 	var apploop = null;
 
