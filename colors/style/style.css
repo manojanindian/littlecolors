@@ -1,0 +1,88 @@
+body {
+	text-align: center;
+	font-family: arial;
+	padding:0;
+	margin:0;
+	
+}
+.container .fa {
+	font-size: 70vw;
+	text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+
+    margin-top: 50%;
+}
+#audio-control {
+	position: absolute;
+    top: -1000px;
+}
+#toggle-app {
+	display:inline-block;
+	color:#4E4D4D;
+	padding: 10px 12px;
+    border-radius: 50%;
+    border:2px solid;
+}
+#toggle-app i {
+	font-size:18px;
+}
+#toggle-app.play .fa-stop{
+	display:none;
+}
+#toggle-app.play .fa-play{
+	display:inline-block;
+}
+#toggle-app .fa-play{
+	display:none;
+}
+#toggle-app .fa-stop{
+	display:inline-block;
+}
+.action-container {
+	position: absolute;
+    width: 100%;
+    bottom: 20px;
+}
+.title {
+	font-size: 20vw;	
+	text-transform: uppercase;
+}
+
+.red {
+	color: red;
+}
+
+.yellow {
+	color: yellow;
+}
+
+.orange {
+	color: orange;
+}
+
+.white {
+	color:white;
+}
+
+.blue. {
+	color:blue;
+}
+.green {
+	color:green;
+}
+.black {
+	color:black;
+}
+.purple {
+	color:purple;
+}
