@@ -1,7 +1,8 @@
 var $container = $(".container");
 	var colorsData = "red,yellow,orange,white,blue,green,black,purple";
-	var objectsData = "cloud,circle,heart,globe";
-	var animationsData = "bounce,flash,rubberBand,shake,swing,tada,wobble,jello,bounceIn,bounceInDown,bounceInLeft,bounceInRight";
+	var objectsData = "apple,banana,beetroot,bell-pepper,carrot,lamon,corn,orange,avocado,cherry,tomato,fish1,fish2,fish3,fish4,fish5,fish6,fish7,fish8,fish9,fish10,fish11,fish12,fish13,face1,face2,face3,face4,face5,face6,face7,face8,face9,face10,face11,face12,face13,face14,face15,face16,face17,face18,face19,face20,face21,face22,face23,face24";
+	//var objectsData = "avocado";
+	var animationsData = "bounce,flash,pulse,rubberBand,shake,swing,tada,wobble,jello,bounceIn,bounceInDown,bounceInLeft,bounceInRight,bounceInUp,fadeIn,fadeInDown,fadeInDownBig,fadeInLeft,fadeInLeftBig,fadeInRight,fadeInRightBig,fadeInUp,fadeInUpBig,flip,flipInX,flipInY,lightSpeedIn,rotateIn,rotateInDownLeft,rotateInDownRight,rotateInUpLeft,rotateInUpRight,slideInUp,slideInDown,slideInLeft,slideInRight,zoomIn,zoomInDown,zoomInLeft,zoomInRight,zoomInUp,rollIn";
 
 	var lastColor = "";
 	var lastAnimation = "";
@@ -13,6 +14,7 @@ var $container = $(".container");
 	var delay = 4*1000;
 
 	var apploop = null;
+	var startBtn = null;
 
 	function startApp() {
 		apploop = setInterval(appLogic, delay);
@@ -21,8 +23,6 @@ var $container = $(".container");
 		$container.html('');
 		clearInterval(apploop);
 	}
-
-
 	function appLogic(){
 
 		if(lastColor !== ""){
@@ -46,6 +46,8 @@ var $container = $(".container");
 		var tempValue = animations.splice(arrayIndex,1);
 		animations.push(tempValue[0]);	
 
+		console.log(object);
+
 
 
 
@@ -56,13 +58,30 @@ var $container = $(".container");
 		$container.html('<i class="fa fa-'+object+'"></i>');
 		$container.addClass(animation+" "+color);
 
-		var audioControl = document.getElementById("audio-control");
-		audioControl.play();
+		//var audioControl = document.getElementById("audio-control");
+		//audioControl.play();
 
 	}
 	function randomIndex(myArray){
 		return Math.floor(Math.random() * (myArray.length-1) );		
-	}	
+	}
+
+	function pleaseStartApp(){
+		startBtn = setInterval(startAppAnimation, 1000);
+	}
+	function pleaseStopApp(){
+		clearInterval(startBtn);
+	}
+	function startAppAnimation(){
+		var btn = $("a#toggle-app");
+
+		if( btn.hasClass('bounce') )
+			$("a#toggle-app").removeClass("bounce").addClass("no");
+		else {
+			$("a#toggle-app").removeClass("no").addClass("bounce");
+		}
+	}
+	pleaseStartApp();
 
 	$(document).ready(function(){
 		$("a#toggle-app").click(function(e){
@@ -75,10 +94,11 @@ var $container = $(".container");
 
 			if($target.hasClass('play')) {
 				stopApp();
-
+				pleaseStartApp();
 			} else {
 				appLogic();
 				startApp();
+				pleaseStopApp();
 			}
 
 			

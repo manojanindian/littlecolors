@@ -1,0 +1,283 @@
+@font-face {
+    font-family: myFirstFont1;
+    src: url(fonts/wmfood1.TTF);
+}
+@font-face {
+    font-family: myFirstFont2;
+    src: url(fonts/FLOODICO.TTF);
+}	
+@font-face {
+    font-family: myFirstFont3;
+    src: url(fonts/EFON.TTF);
+}
+@font-face {
+    font-family: myFirstFont4;
+    src: url(fonts/AussieIcons.ttf);
+}
+.fa-apple::after {
+	content: "a";
+	font-family:myFirstFont1;
+	font-style: normal;
+}
+.fa-banana::after {
+    content: "d";
+    font-family:myFirstFont1;
+    font-style: normal;
+}
+.fa-beetroot::after {
+    content: "e";
+    font-family:myFirstFont1;
+    font-style: normal;
+    font-size:50vw !important;
+}
+.fa-bell-pepper::after {
+    content: "f";
+    font-family:myFirstFont1;
+    font-style: normal;
+    font-size:70vw !important;
+}
+.fa-carrot::after {
+    content: "l";
+    font-family:myFirstFont1;
+    font-style: normal;
+    font-size:70vw !important;
+}
+.fa-lamon::after {
+    content: "q";
+    font-family:myFirstFont1;
+    font-style: normal;
+}
+.fa-corn::after {
+    content: "s";
+    font-family:myFirstFont1;
+    font-style: normal;
+}
+.fa-graps::after {
+    content: "u";
+    font-family:myFirstFont1;
+    font-style: normal;
+}
+.fa-tomato::after {
+    content: "Q";
+    font-family:myFirstFont1;
+    font-style: normal;
+}
+.fa-orange::after {
+    content: "F";
+    font-family:myFirstFont1;
+    font-style: normal;
+    font-size:50vw !important;
+}
+.fa-pear::after {
+    content: "J";
+    font-family:myFirstFont1;
+    font-style: normal;
+}
+.fa-strawberry::after {
+    content: "O";
+    font-family:myFirstFont1;
+    font-style: normal;
+}
+.fa-pineapple::after {
+    content: "N";
+    font-family:myFirstFont1;
+    font-style: normal;
+}
+.fa-avocado::after {
+    content: "c";
+    font-family:myFirstFont1;
+    font-style: normal;
+    font-size:70vw !important;
+}
+.fa-cherry::after {
+    content: "o";
+    font-family:myFirstFont1;
+    font-style: normal;
+    font-size:70vw !important;
+}
+.fa-fish1::after {
+    content: "a";
+    font-family:myFirstFont2;
+    font-style: normal;
+}
+.fa-fish2::after {
+    content: "b";
+    font-family:myFirstFont2;
+    font-style: normal;
+}
+.fa-fish3::after {
+    content: "c";
+    font-family:myFirstFont2;
+    font-style: normal;
+}
+.fa-fish4::after {
+    content: "d";
+    font-family:myFirstFont2;
+    font-style: normal;
+}
+.fa-fish5::after {
+    content: "e";
+    font-family:myFirstFont2;
+    font-style: normal;
+}
+.fa-fish6::after {
+    content: "f";
+    font-family:myFirstFont2;
+    font-style: normal;
+}
+.fa-fish7::after {
+    content: "l";
+    font-family:myFirstFont2;
+    font-style: normal;
+}
+.fa-fish8::after {
+    content: "m";
+    font-family:myFirstFont2;
+    font-style: normal;
+}
+.fa-fish9::after {
+    content: "n";
+    font-family:myFirstFont2;
+    font-style: normal;
+}
+.fa-fish10::after {
+    content: "o";
+    font-family:myFirstFont2;
+    font-style: normal;
+}
+.fa-fish11::after {
+    content: "p";
+    font-family:myFirstFont2;
+    font-style: normal;
+}
+.fa-fish12::after {
+    content: "w";
+    font-family:myFirstFont2;
+    font-style: normal;
+}
+.fa-fish13::after {
+    content: "y";
+    font-family:myFirstFont2;
+    font-style: normal;
+}
+.fa-face1::after {
+    content: "a";
+    font-family:myFirstFont3;
+    font-style: normal;
+}
+.fa-face2::after {
+    content: "b";
+    font-family:myFirstFont3;
+    font-style: normal;
+}
+.fa-face3::after {
+    content: "c";
+    font-family:myFirstFont3;
+    font-style: normal;
+}
+.fa-face4::after {
+    content: "d";
+    font-family:myFirstFont3;
+    font-style: normal;
+}
+.fa-face5::after {
+    content: "e";
+    font-family:myFirstFont3;
+    font-style: normal;
+}
+.fa-face6::after {
+    content: "f";
+    font-family:myFirstFont3;
+    font-style: normal;
+}
+.fa-face7::after {
+    content: "g";
+    font-family:myFirstFont3;
+    font-style: normal;
+}
+.fa-face8::after {
+    content: "h";
+    font-family:myFirstFont3;
+    font-style: normal;
+}
+.fa-face9::after {
+    content: "i";
+    font-family:myFirstFont3;
+    font-style: normal;
+}
+.fa-face10::after {
+    content: "l";
+    font-family:myFirstFont3;
+    font-style: normal;
+}
+.fa-face11::after {
+    content: "m";
+    font-family:myFirstFont3;
+    font-style: normal;
+}
+.fa-face12::after {
+    content: "n";
+    font-family:myFirstFont3;
+    font-style: normal;
+}
+.fa-face13::after {
+    content: "o";
+    font-family:myFirstFont3;
+    font-style: normal;
+}
+.fa-face14::after {
+    content: "p";
+    font-family:myFirstFont3;
+    font-style: normal;
+    font-size:70vw !important;
+}
+.fa-face15::after {
+    content: "q";
+    font-family:myFirstFont3;
+    font-style: normal;
+}
+.fa-face16::after {
+    content: "r";
+    font-family:myFirstFont3;
+    font-style: normal;
+}
+.fa-face17::after {
+    content: "s";
+    font-family:myFirstFont3;
+    font-style: normal;
+}
+.fa-face18::after {
+    content: "t";
+    font-family:myFirstFont3;
+    font-style: normal;
+}
+.fa-face19::after {
+    content: "u";
+    font-family:myFirstFont3;
+    font-style: normal;
+}
+.fa-face20::after {
+    content: "v";
+    font-family:myFirstFont3;
+    font-style: normal;
+}
+.fa-face21::after {
+    content: "w";
+    font-family:myFirstFont3;
+    font-style: normal;
+}
+.fa-face22::after {
+    content: "x";
+    font-family:myFirstFont3;
+    font-style: normal;
+}
+.fa-face23::after {
+    content: "y";
+    font-family:myFirstFont3;
+    font-style: normal;
+}
+.fa-face24::after {
+    content: "z";
+    font-family:myFirstFont3;
+    font-style: normal;
+}
