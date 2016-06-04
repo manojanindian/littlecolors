@@ -8,6 +8,7 @@
     <!-- versionCode is optional and Android only -->
 
     <name>Little Colors</name>
+    <preference name="orientation" value="portrait" />
 
     <description>
         Learning, Colors, Kids 
