@@ -3,9 +3,14 @@ body {
 	font-family: arial;
 	padding:0;
 	margin:0;
-	background:url("../images/wood-bg.jpg");
-	
+	background:url("../images/wood-bg.jpg");	
 }
+ul, ul li{
+	padding:0;
+	margin:0;
+	list-style: none;	
+}
+
 .container .fa {
 	font-size: 95vw;
 	text-shadow: 0 1px 0 #ccc,
@@ -23,14 +28,51 @@ body {
 
     margin-top: 50%;
 }
+.hide{
+  display:none !important;  
+}
+.show{
+  display:inline-block !important;
+}
 #audio-control {
 	position: absolute;
     top: -1000px;
 }
+.setting-container p{
+	font-style:italic;
+	margin-bottom: 5px;
+}
+.setting-container {
+	background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 20px;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    color:white;
+    font-size:15px;
+    overflow-y: scroll;
+    display:none;
+}
+.setting-btn {
+  position:absolute;
+  right:20px;
+  text-decoration: none;
+  color:white;
+}
+.setting-btn img {
+  width:70px;
+}
+#close-setting-container{
+  float:right;
+}
 #toggle-app {
 	display: inline-block;
-    background-color: #585A9C;    
-    border: 10px solid transparent;
+    background:url("../images/stop.png") center center;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -38,7 +80,7 @@ body {
     line-height: 58px;
 }
 #toggle-app.play {
-	border: 10px solid #A19DC1;
+	background:url("../images/play.png") center center;
 }
 #toggle-app i {
 	font-size:18px;

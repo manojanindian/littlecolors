@@ -9,6 +9,29 @@
 	<link rel="stylesheet" type="text/css" href="style/vendor/animate.css">
 </head>
 <body>
+	<div class="setting-container hide">
+		<a href="#close" id="close-setting-container"><img src="images/close.png"></a>
+		<p>Delay</p>
+		<ul class="store-delay">
+			<li><input type="radio" name="set-delay" id="set-delay4" value="4"><label for="set-delay4">4 Seconds</label></li>
+			<li><input type="radio" name="set-delay" id="set-delay5" value="5"><label for="set-delay5">5 Seconds</label></li>
+			<li><input type="radio" name="set-delay" id="set-delay6" value="6"><label for="set-delay6">6 Seconds</label></li>
+			<li><input type="radio" name="set-delay" id="set-delay7" value="7"><label for="set-delay7">7 Seconds</label></li>
+		</ul>
+		<p>Colors</p>
+		<form class="store-colors-form">
+		<ul class="store-colors">
+			<li class="red"><input type="checkbox" name="set-color[]" id="set-color-red" value="red"><label for="set-color-red">Red</label></li>
+			<li class="yellow"><input type="checkbox" name="set-color[]" id="set-color-yellow" value="yellow"><label for="set-color-yellow">Yellow</label></li>
+			<li class="orange"><input type="checkbox" name="set-color[]" id="set-color-orange" value="orange"><label for="set-color-orange">Orange</label></li>
+			<li class="white"><input type="checkbox" name="set-color[]" id="set-color-white" value="white"><label for="set-color-white">White</label></li>
+			<li class="blue"><input type="checkbox" name="set-color[]" id="set-color-blue" value="blue"><label for="set-color-blue">Blue</label></li>
+			<li class="green"><input type="checkbox" name="set-color[]" id="set-color-green" value="green"><label for="set-color-green">Green</label></li>
+			<li class="black"><input type="checkbox" name="set-color[]" id="set-color-black" value="black"><label for="set-color-black">Black</label></li>
+			<li class="purple"><input type="checkbox" name="set-color[]" id="set-color-purple" value="purple"><label for="set-color-purple">Purple</label></li>
+		</ul>
+		</form>
+	</div>
 	<div class="container animated">
 		
 	</div>
@@ -19,10 +42,11 @@
 	</audio>
 
 	<div class="action-container">
-		<a href="#abc" id="toggle-app" class="play animated bounce">
-			<i class="fa fa-play" >Start</i>
-			<i class="fa fa-stop" >Stop</i>
+		<a href="#abc" id="toggle-app" class="show play animated bounce">
+			<i class="fa fa-play" ></i>
+			<i class="fa fa-stop" ></i>
 		</a>
+		<a class="setting-btn show" href="#setting"><img src="images/setting.png"></a>
 	</div>
 		
 	
