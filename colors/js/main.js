@@ -16,7 +16,7 @@ var delay = 4*1000;
 var apploop = null;
 var startBtn = null;
 
-
+var audioControl = document.getElementById("audio-control");
 
 if (typeof(Storage) !== "undefined") {
     
@@ -92,8 +92,9 @@ $(".store-colors input").click(function(e){
 		$container.html('<i class="fa fa-'+object+'"></i>');
 		$container.addClass(animation+" "+color);
 
-		//var audioControl = document.getElementById("audio-control");
-		//audioControl.play();
+		audioControl.src = "sounds/" + color + ".mp3";
+		audioControl.load();
+		audioControl.play();
 
 	}
 	function randomIndex(myArray){
